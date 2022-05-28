@@ -33,7 +33,7 @@
 ### Charge
 	var success bool
 	var point float32 // The user can choose how many points he want to use.
-	success := cashier.NormalCharge(car.Cost, &roy)
+	success = cashier.NormalCharge(car.Cost, &roy)
 	success = cashier.VipCharge(car.Cost, &roy)
 	success = cashier.PointsCharge(car.Cost, &roy, point)
 	success = cashier.NewCharge(car.Cost, &roy, point)
