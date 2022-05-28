@@ -2,20 +2,20 @@
 
 **A cash register program in Golang**
 
-###Download
+### Download
 	go get -u github.com/roy105703007/cashier
 
-###Usage
+### Usage
 	import "github.com/roy105703007/cashier"
 
-###Setting
+### Setting
 	cashier.VipDiscount = make(map[uint8]float32)
 	cashier.VipDiscount[1] = 0.95
 	cashier.VipDiscount[2] = 0.9
 	cashier.VipDiscount[3] = 0.85
 	cashier.ExchangeRate = 1 // token/point
 
-###Create Member
+### Create Member
 	roy := cashier.Member{
 		Name:   "roy",
 		Vip:    2,
@@ -30,7 +30,7 @@
 		ChargeMode: 2,
 	}
 
-###Charge
+### Charge
 	var success bool
 	var point float32 // The user can choose how many points he want to use.
 	success := cashier.NormalCharge(car.Cost, &roy)
