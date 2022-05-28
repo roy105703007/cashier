@@ -6,7 +6,9 @@
 	go get -u github.com/roy105703007/cashier
 
 ### Usage
-	import "github.com/roy105703007/cashier"
+    ```go
+    import "github.com/roy105703007/cashier"
+    ```
 
 ### Setting
 	//VipDiscount record discount rates for different membership levels
