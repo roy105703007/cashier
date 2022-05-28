@@ -6,17 +6,19 @@
 	go get -u github.com/roy105703007/cashier
 
 ### Usage
-    ```go
-    import "github.com/roy105703007/cashier"
-    ```
+```go
+import "github.com/roy105703007/cashier"
+```
 
 ### Setting
+```go
 	//VipDiscount record discount rates for different membership levels
 	cashier.VipDiscount = make(map[uint8]float32)
 	cashier.VipDiscount[1] = 0.95
 	cashier.VipDiscount[2] = 0.9
 	cashier.VipDiscount[3] = 0.85
 	cashier.ExchangeRate = 1 // token/point
+```
 
 ### Create Member
 	roy := cashier.Member{
